@@ -1,0 +1,5 @@
+
+[class^="icono-"], [class*=" icono-"], [class^="logo-"], [class*=" logo-"] {
+  @include icon();
+  @include transicion-basica();
+}

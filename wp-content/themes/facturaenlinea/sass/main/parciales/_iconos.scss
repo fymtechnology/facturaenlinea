@@ -1,0 +1,72 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.woff2') format('woff2'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class*="isotipo"], [class^="icono-"], [class*=" icono-"], [class^="logo-"], [class*=" logo-"] {
+	@include icon();
+	@include transicion-basica();
+}
+
+// Identidad Gráfica
+
+.logo:before {
+	content: $logo;
+}
+
+.logo-a:before {
+	content: $logo-a;
+}
+
+.logo-b:after {
+	content: $logo-b;
+}
+
+.isotipo:before {
+	content: $isotipo;
+}
+
+.isotipo-a:before {
+	content: $isotipo-a;
+}
+
+.isotipo-b:after {
+	content: $isotipo-b;
+}
+
+
+// Redes Sociales
+
+.logo-facebook:before {
+	content: $logo-facebook;
+}
+
+.logo-twitter:before {
+	content: $logo-twitter;
+}
+
+.logo-linkedin:before {
+	content: $logo-linkedin;
+}
+
+.logo-google-plus:before {
+	content: $logo-google-plus;
+}
+
+
+// Iconografía
+
+.icono-buscar:before {
+	content: $icono-buscar;
+}
+
+.icono-ayuda:before {
+	content: $icono-ayuda;
+}

@@ -1,0 +1,39 @@
+#links {
+	line-height:1.8em;
+	font-size:14px;
+	padding: 40px 0;
+
+	.container {
+
+		@media(max-width: 767px) {
+			padding: 0 50px;
+		}
+
+		.col-xs-6 {
+			min-height: 180px;
+		}
+
+		ul {
+			line-height:1.9em;
+			margin:0;
+			padding: 0;
+
+			li {
+				list-style:none;
+				text-transform:capitalize;
+
+			}
+
+			&.menu {
+
+				> li {
+
+					> a {
+						font-family: $fuente-bold;
+						text-transform:uppercase;
+					}
+				}
+			}
+		}
+	}
+}

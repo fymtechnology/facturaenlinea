@@ -1,0 +1,10 @@
+body {
+
+	.container {
+		position: relative;
+
+		@media(min-width: 1200px){
+			width: 900px;
+		}
+	}
+}

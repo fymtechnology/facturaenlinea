@@ -1,0 +1,32 @@
+#clientes {
+	text-align: center;
+	background-color: $verde;
+
+	h2 {
+		color: white;
+		margin: 40px 0 60px;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+
+		li {
+			display: inline-block;
+			list-style: none;
+			width: 120px;
+
+			@media(min-width: 768px) {
+				width: 140px;
+			}
+
+			@media(min-width: 992px) {
+				width: 160px;
+			}
+
+			@media(min-width: 1200px) {
+				width: 180px;
+			}
+		}
+	}
+}

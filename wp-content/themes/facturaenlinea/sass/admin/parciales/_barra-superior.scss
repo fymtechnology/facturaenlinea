@@ -1,0 +1,106 @@
+//#wpcontent {
+  #wpadminbar {
+    background-color: darken($color-corporativo-1, 10) !important;
+    .ab-sub-secondary {
+      background-color: lighten($color-corporativo-2, 10) !important;
+
+      .ab-submenu {
+        background-color: $color-corporativo-2 !important;
+      }
+    }
+    .ab-icon:before {
+      color: $color-corporativo-2 !important;
+    }
+    .ab-top-menu > li {
+      &.hover > .ab-item, &:hover > .ab-item, > .ab-item:focus {
+        background-color: $color-corporativo-2 !important;
+        color: $color-corporativo-1 !important;
+      }
+    }
+    &.nojq .quicklinks .ab-top-menu > li > .ab-item:focus {
+      background-color: $color-corporativo-2 !important;
+      color: $color-corporativo-1 !important;
+    }
+    .ab-top-menu > li {
+      &.hover > .ab-item {
+        .ab-icon:before, .ab-label {
+          color: $color-corporativo-1 !important;
+        }
+      }
+      &:hover > .ab-item {
+        .ab-icon:before, .ab-label {
+          color: $color-corporativo-1 !important;
+        }
+      }
+      > .ab-item:focus {
+        .ab-icon:before, .ab-label {
+          color: $color-corporativo-1 !important;
+        }
+      }
+    }
+    &.nojq .quicklinks .ab-top-menu > li > .ab-item:focus {
+      .ab-icon:before, .ab-label {
+        color: $color-corporativo-1 !important;
+      }
+    }
+    .ab-top-menu > li {
+      &.hover > .ab-item:before, &:hover > .ab-item:before, > .ab-item:focus:before {
+        color: $color-corporativo-1 !important;
+      }
+    }
+    &.nojq .quicklinks .ab-top-menu > li > .ab-item:focus:before {
+      color: $color-corporativo-1 !important;
+    }
+    .menupop .ab-sub-wrapper, .shortlink-input {
+      background-color: $color-corporativo-2 !important;
+    }
+    .menupop .ab-sub-wrapper .ab-item:hover, .shortlink-input .ab-item:hover, .menupop .ab-sub-wrapper .ab-item:hover:before, .shortlink-input .ab-item:hover:before {
+      color: $color-corporativo-1 !important;
+    }
+  }
+  .username {
+    color: $color-corporativo-1 !important;
+  }
+
+
+//iconos
+
+#wp-admin-bar-site-name > .ab-item:before {
+  color: white;
+  content: $isotipo !important;
+  @include icon();
+  @include transicion-basica();
+}
+
+#wp-admin-bar-my-sites {
+
+  > .ab-item:before {
+    color: white !important;
+      content: $isotipo !important;
+      @include icon();
+      @include transicion-basica();
+  }
+
+  + #wp-admin-bar-site-name > .ab-item:before {
+    color:$azul-claro;
+    font-family: 'dashicons' !important;
+    content: "\f226" !important;
+  }
+
+  .blavatar {
+    //content: "" !important;
+    display: none !important;
+  }
+}
+
+.view-list.current:before, .view-excerpt.current:before, .view-grid.current:before {
+  color: $color-corporativo-1 !important;
+}
+
+.welcome-panel a[class*="-icon"]:before {
+  color: $color-corporativo-1;
+}
+
+#wp-admin-bar-wp-logo .ab-icon:before {
+  color: lighten($color-corporativo-1, 10);
+}

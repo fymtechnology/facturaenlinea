@@ -1,0 +1,138 @@
+html, body {
+    font-family: $fuente, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight:normal;
+    text-transform:uppercase;
+}
+
+h1 {
+    font-size:47px;
+}
+
+h2 {
+    font-size:29px;
+    margin:30px 0 10px 0;
+}
+
+a {
+    font-family: $fuente;
+    color:#00adef;
+    text-decoration:none;
+}
+
+a.moretag {
+    text-transform:uppercase;
+    font-size:0.8em;
+}
+
+input, textarea {
+    font-family: $fuente;
+    font-size:14px;
+}
+
+a:hover {
+    text-decoration:underline;
+    background-position:center !important;
+    cursor:pointer !important;
+}
+
+a:active {
+    background-position:bottom !important;
+}
+
+b, strong {
+    font-family: $fuente-medium;
+    font-weight:normal !important;
+    font-size:19px;
+}
+
+p {
+    margin-bottom:10px;
+}
+    
+p, ul, ol {
+    line-height:1.5em;
+}
+
+ul,  ol {
+    margin:10px 0 20px 30px;
+}
+
+em {
+    line-height:1.4em;
+    font-size:14px;
+}
+
+blockquote {
+    position:relative;
+    display:block;
+    margin:40px 0;
+    font-size:1.3em;
+    border-top:1px solid #d6dcde;
+    border-bottom:1px solid #d6dcde;
+    border-left: none;
+    color: $gris;
+    padding:30px 70px 60px 40px;
+
+    @media(min-width: 768px) {
+        padding:30px 100px 60px 40px;
+    }
+
+    @media(min-width: 992px) {
+        padding:30px 120px 60px 40px;
+    }
+
+    @media(min-width: 1200px) {
+        padding:30px 140px 60px 40px;
+    }
+
+    p {
+        line-height:1.5em;
+        display:block;
+        position:relative;
+
+        &:before {
+            content: "\201C";
+            font-size:500%;
+            top:55px;
+            left:-5px;
+            position:relative;
+            display:inline;
+            font-family: $fuente-bold;
+        }
+
+        &:after {
+            content: "\201D";
+            font-size:500%;
+            bottom:-20px;
+            position:absolute;
+            display:inline;
+            font-family: $fuente-bold;
+        }
+    }
+
+    cite {
+        font-size:0.9em;
+        margin-top:20px;
+        display:block;
+        position:relative;  
+    }
+
+    img {
+        display:block;
+        position:absolute;
+        font-size:0;
+        right:0;
+        bottom:40px;
+
+        @media(min-width: 768px) {
+             bottom:50px;
+        }
+
+         @media(min-width: 992px) {
+             bottom:60px;
+        }
+    }
+}

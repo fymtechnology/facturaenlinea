@@ -1,0 +1,39 @@
+#call-to-action {
+	padding: 40px 0; 
+
+	.btn {
+		display: inline-block;
+		width: 310px;
+		height: 70px;
+		line-height: 55px;
+		font-size: 2.2em;
+	}
+
+	#inicia-gratis {
+		text-align: center;
+		margin-bottom: 20px;
+
+		@media(min-width: 768px) {
+			text-align: right;
+			margin-bottom: 0;
+		}
+
+		.btn {
+			background-color: $azul;
+		}
+	}
+
+	#enterate-mas {
+		text-align: center;
+
+		@media(min-width: 768px) {
+			text-align: left;
+		}
+		
+
+		.btn {
+			background-color: $gris;
+			
+		}
+	}
+}

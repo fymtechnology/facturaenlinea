@@ -1,0 +1,34 @@
+// Modulos y Variables
+
+@import "modulos/all";
+@import "main/base";
+
+
+// Parciales
+
+@import "main/parciales/fuente";
+@import "main/parciales/tipografia";
+@import "main/parciales/iconos";
+@import "main/parciales/layout";
+
+@import "main/parciales/header";
+@import "main/parciales/slider";
+@import "main/parciales/call-to-action";
+@import "main/parciales/certificados-ley";
+@import "main/parciales/testimonios";
+@import "main/parciales/prensa";
+@import "main/parciales/contador";
+@import "main/parciales/clientes";
+@import "main/parciales/links";
+@import "main/parciales/certificados";
+@import "main/parciales/footer";
+
+@import "main/parciales/button";
+@import "main/parciales/bootstrap";
+
+
+// Barra Superior
+
+//@import "admin/parciales/barra-superior";
+@import "admin/parciales/avatar";
+

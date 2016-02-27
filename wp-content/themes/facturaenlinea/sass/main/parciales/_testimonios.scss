@@ -1,0 +1,15 @@
+#testimonios {
+
+	a {
+		text-decoration: none;
+
+		&:hover {
+			
+
+			blockquote {
+				@include transicion-basica();
+				color: $azul;
+			}
+		}
+	}
+}

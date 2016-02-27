@@ -1,0 +1,53 @@
+.button {
+  @include transicion-rapida();
+}
+
+.button-primary {
+  border: none !important;
+   @include box-shadow(none !important);
+  background-color: $color-corporativo-2 !important;
+  text-shadow:0px 0px 0px transparent !important;
+  @include transicion-rapida();
+  &:hover {
+    background-color: $color-corporativo-1 !important;
+  }
+
+  &.grey, &.location-add-rule, &.location-add-group {
+  	color: white !important;
+  }
+}
+
+.js-wpcf-access-editor-button {
+	//display: none !important;
+}
+
+.acf-button {
+  border: none !important;
+   @include box-shadow(none !important);
+   @include transicion-rapida();
+   background-color: lighten($color-corporativo-2, 30);
+  color: lighten($color-corporativo-1, 10);
+
+  &.blue {
+     background-color: $color-corporativo-2 !important;
+
+     &:hover {
+       background-color: $color-corporativo-1 !important;
+     }
+  }
+
+  &:hover {
+    background-color: lighten($color-corporativo-2, 20);
+    color: lighten($color-corporativo-1, 10);
+  }
+}
+
+.acf-flexible-content .acf-button.blue {
+  background-color: lighten($color-corporativo-2, 30) !important;
+  color: lighten($color-corporativo-1, 10) !important;
+
+  &:hover {
+    background-color: lighten($color-corporativo-2, 20)  !important;
+    color: lighten($color-corporativo-1, 10) !important;
+  }
+}
